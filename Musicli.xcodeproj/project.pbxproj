@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		8D33D1672ACC237C009A1F36 /* Musicli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Musicli; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D33D16A2ACC237C009A1F36 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8D33D1712ACC23CC009A1F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				8D33D16A2ACC237C009A1F36 /* main.swift */,
+				8D33D1712ACC23CC009A1F36 /* Info.plist */,
 			);
 			path = Musicli;
 			sourceTree = "<group>";
