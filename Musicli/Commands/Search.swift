@@ -1,6 +1,7 @@
 import ArgumentParser
 import MusicKit
 import Spinner
+import ANSITerminal
 
 struct Search: AsyncParsableCommand {
     func run() async throws {
@@ -20,10 +21,10 @@ struct Search: AsyncParsableCommand {
         print("")
         
         for song in searchResponse.songs {
-            print("Title: " + song.title)
-            print("Artist: " + song.artistName)
-            print("Album: " + song.albumTitle!)
-            print("Genres: " + song.genreNames.joined(separator: ", "))
+            print("Title: ".bold + song.title)
+            print("Artist: ".bold + song.artistName)
+            print("Album: ".bold + song.albumTitle!)
+            print("Genres: ".bold + song.genreNames.joined(separator: ", "))
             print("")
         }
     }
