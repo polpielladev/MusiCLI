@@ -1,5 +1,6 @@
 import ArgumentParser
 import MusicKit
+import Spinner
 
 struct Search: AsyncParsableCommand {
     func run() async throws {
@@ -8,8 +9,12 @@ struct Search: AsyncParsableCommand {
         print("Enter the name of the song you'd like to search for...")
         guard let query = readLine() else { return }
         print("")
+        
+        let spinner = Spinner(.dots, "Loading results...", color: .green)
+        spinner.start()
         let request = MusicCatalogSearchRequest(term: query, types: [Song.self])
         let searchResponse = try await request.response()
+        spinner.stop()
         
         print("Search results for: '\(query)'")
         print("")

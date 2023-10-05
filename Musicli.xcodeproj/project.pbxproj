@@ -12,6 +12,7 @@
 		8D0021762ACF1687008CC418 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0021752ACF1687008CC418 /* App.swift */; };
 		8D0021782ACF169B008CC418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0021772ACF169B008CC418 /* AppDelegate.swift */; };
 		8D00217A2ACF1727008CC418 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0021792ACF1727008CC418 /* SongView.swift */; };
+		8D00217D2ACF18BD008CC418 /* Spinner in Frameworks */ = {isa = PBXBuildFile; productRef = 8D00217C2ACF18BD008CC418 /* Spinner */; };
 		8D33D16B2ACC237C009A1F36 /* Musicli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33D16A2ACC237C009A1F36 /* Musicli.swift */; };
 		8D33D1742ACC24EB009A1F36 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 8D33D1732ACC24EB009A1F36 /* ArgumentParser */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D00217D2ACF18BD008CC418 /* Spinner in Frameworks */,
 				8D33D1742ACC24EB009A1F36 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +125,7 @@
 			name = Musicli;
 			packageProductDependencies = (
 				8D33D1732ACC24EB009A1F36 /* ArgumentParser */,
+				8D00217C2ACF18BD008CC418 /* Spinner */,
 			);
 			productName = Musicli;
 			productReference = 8D33D1672ACC237C009A1F36 /* Musicli */;
@@ -154,6 +157,7 @@
 			mainGroup = 8D33D15E2ACC237C009A1F36;
 			packageReferences = (
 				8D33D1722ACC24EB009A1F36 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				8D00217B2ACF18BD008CC418 /* XCRemoteSwiftPackageReference "Spinner" */,
 			);
 			productRefGroup = 8D33D1682ACC237C009A1F36 /* Products */;
 			projectDirPath = "";
@@ -351,6 +355,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8D00217B2ACF18BD008CC418 /* XCRemoteSwiftPackageReference "Spinner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dominicegginton/Spinner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
 		8D33D1722ACC24EB009A1F36 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
@@ -362,6 +374,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8D00217C2ACF18BD008CC418 /* Spinner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D00217B2ACF18BD008CC418 /* XCRemoteSwiftPackageReference "Spinner" */;
+			productName = Spinner;
+		};
 		8D33D1732ACC24EB009A1F36 /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D33D1722ACC24EB009A1F36 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
