@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0021702ACF160D008CC418 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D00216F2ACF160D008CC418 /* Search.swift */; };
 		8D33D16B2ACC237C009A1F36 /* Musicli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33D16A2ACC237C009A1F36 /* Musicli.swift */; };
 		8D33D1742ACC24EB009A1F36 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 8D33D1732ACC24EB009A1F36 /* ArgumentParser */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D00216F2ACF160D008CC418 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		8D33D1672ACC237C009A1F36 /* Musicli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Musicli; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D33D16A2ACC237C009A1F36 /* Musicli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicli.swift; sourceTree = "<group>"; };
 		8D33D1712ACC23CC009A1F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D00216E2ACF15FF008CC418 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				8D00216F2ACF160D008CC418 /* Search.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 		8D33D15E2ACC237C009A1F36 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		8D33D1692ACC237C009A1F36 /* Musicli */ = {
 			isa = PBXGroup;
 			children = (
+				8D00216E2ACF15FF008CC418 /* Commands */,
 				8D33D16A2ACC237C009A1F36 /* Musicli.swift */,
 				8D33D1712ACC23CC009A1F36 /* Info.plist */,
 			);
@@ -131,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D33D16B2ACC237C009A1F36 /* Musicli.swift in Sources */,
+				8D0021702ACF160D008CC418 /* Search.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
